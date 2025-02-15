@@ -1,0 +1,188 @@
+/* Basic Styles for the Page */
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e3e3;
+}
+
+/* Header section */
+#head {
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    background-color: #e9e3e3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.filter {
+    background-color: #e74646;
+    color: black;
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid rgb(201, 174, 174);
+    border-radius: 10px;
+}
+
+.filter:hover {
+    background-color: #b36363;
+}
+
+/* Restaurant Cards Container */
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Individual Restaurant Card */
+.card {
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Restaurant Name and Rating */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-header .rating {
+    background-color: #f4b400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Food Type and Price */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Location and Distance */
+.card-location {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Filter popup page */
+#filterPopup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    background-color: #f5e1d7;
+    border-radius: 10px;
+}
+
+.filterOption {
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Header section */
+.box{
+    display: inline-block;
+}
+.first{
+    margin-left: 200px;
+}
+.brand{
+    color: white;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.searching{
+    width: 300px;
+    position: relative;
+    bottom: 12px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-left: 8px;
+}
+.search{
+    margin-right: 50px;
+}
+.head{
+    background-image: url('./Images/collect3.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: white;
+}
+.login{
+    height: 30px;
+    width: 80px;
+    position: relative;
+    bottom: 10px;
+    font-size: 16px;
+    margin-right: 50px;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* filter page button */
+#apply ,#close{
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid rgb(201, 174, 174);
+    border-radius: 10px;
+    padding: 8px 16px;
+    background-color: #e74646;
+}
+#apply:hover , #close:hover{
+    background-color: #b36363;
+}

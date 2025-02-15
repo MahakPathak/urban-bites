@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Bites</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="first">
+                <div class="brand box">
+                    <h1>urban bites</h1>
+                </div>
+                <div class="search box">
+                    <form>
+                        <input type="text" name="" id="" class="searching" placeholder="search for restaurant">
+                    </form>
+                </div>
+                <div class="log box">
+                    <button class="login">Log in</button>
+                </div>
+                <div class="sign box">
+                    <button class="login">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="head">
+        <button id="filters" class="filter">Filters</button>
+        <button id="offers" class="filter">Offers</button>
+        <button id="rating" class="filter">Rating 4.5+</button>
+        <button id="alcohol" class="filter">Serves Alcohol</button>
+        <button id="open" class="filter">Open now</button>
+    </div>
+    <div id="root"></div>
+    <div id="filterPopup" class="hidden">
+        <h3>Choose Filter</h3>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="sortByRating" value="rating">
+            <label for="sortByRating">Sort By Rating</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="sortHightToLow" value="highLow">
+            <label for="sortHighToLow">High to Low(Price)</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="costOption" value="costLowHigh">
+            <label for="costOption">Cost: Low to Hight</label>
+        </div>
+        <div class="filterOption">
+            <input type="radio" name="filterOption" id="distanceOption" value="distance">
+            <label for="distanceOption">Distance</label>
+        </div>
+        <button id="apply">Apply</button>
+        <button id="close">Close</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
