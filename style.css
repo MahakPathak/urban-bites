@@ -1,12 +1,10 @@
 /* Basic Styles for the Page */
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 body {
     font-family: cursive;
-    margin: 0;
-    padding: 0;
     background-color: #e9e3e3;
 }
 
@@ -165,6 +163,9 @@ body {
     background-position: center;
     color: white;
     background-color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
 }
 .login{
     height: 30px;
