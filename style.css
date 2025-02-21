@@ -1,4 +1,8 @@
 /* Basic Styles for the Page */
+*{
+    margin: 0;
+    padding: 0
+}
 body {
     font-family: cursive;
     margin: 0;
@@ -185,4 +189,24 @@ body {
 }
 #apply:hover , #close:hover{
     background-color: #b36363;
+}
+
+.imgs{
+    position: relative;
+
+}
+.imgs .img{
+    width: 100%;
+}
+.hey{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(11, 11, 99 , 0.8);
+    width: 100%;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top-left-radius: 4rem;
+    color: white;
 }

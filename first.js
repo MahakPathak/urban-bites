@@ -45,6 +45,7 @@ const rest_name = ["The Gourmet Haven",
       "Vasant Kunj",
       "Dwarka"
     ];
+    const offer = [30,40,0,60,10,20,70,0,90,50];
 for(let i=0;i<100;i++){
     const obj={};
     obj["image"]=image[Math.floor(Math.random()*10)];
@@ -54,10 +55,10 @@ for(let i=0;i<100;i++){
     obj["Price_for_two"] = Math.floor(Math.random()*2401+100);
     obj["location"] =  delhiLocations[Math.floor(Math.random()*10)];
     obj["Distance_from_Customer_house"] = (Math.random()*10+1).toFixed(1);
-    obj["offers"] = Math.floor(Math.random()*30);
     obj["alcohol"] = Math.random() > 0.7;
     obj["Restaurant_open_time"] = Math.floor(Math.random()*24);
     obj["Restaurant_close_time"] =  (obj["Restaurant_open_time"]+12)%24;
+    obj["offers"] = offer[Math.floor(Math.random()*10)];
 
     res.push(obj)
 }
